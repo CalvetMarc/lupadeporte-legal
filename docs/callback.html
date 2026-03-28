@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html><head><title>Authorization Complete</title></head>
+<body>
+<h1>Authorization Complete</h1>
+<p>You can close this window.</p>
+<script>
+const params = new URLSearchParams(window.location.search);
+const code = params.get("code");
+if (code) document.body.innerHTML += "<p>Code: " + code + "</p>";
+</script>
+</body></html>
